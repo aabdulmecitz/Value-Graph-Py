@@ -34,8 +34,8 @@ amounts_p_thousands = [amount / 1000 for amount in amounts_p]
 
 # Grafik oluşturma
 plt.figure(figsize=(12, 6))  # Geniş bir grafik
-plt.plot(range(months + 1), amounts_thousands, label='Aylık %30 Bileşik Faiz (Kasa)', color='blue', marker='o')
-plt.plot(range(months + 1), amounts_p_thousands, label='Aylık %10 Bileşik Faiz (Yatırımcı)', color='red', marker='o')
+plt.plot(range(months + 1), amounts_thousands, label='Aylık %30 Bileşik Faiz (Kasa)', color='blue', marker='.')
+plt.plot(range(months + 1), amounts_p_thousands, label='Aylık %10 Bileşik Faiz (Yatırımcı)', color='red', marker='.')
 
 # Y ekseni sınırlarını ayarla
 max_amount = max(max(amounts_thousands), max(amounts_p_thousands))
@@ -47,7 +47,7 @@ plt.ticklabel_format(style='plain', axis='y')
 # Eksen etiketleri ve başlık
 plt.title('Aylık Bileşik Faiz Hesaplaması (36 Ay)')
 plt.xlabel('Ay')
-plt.ylabel('Toplam Miktar (Bin TL)')
+plt.ylabel('Toplam Miktar (Bin $)')
 plt.grid(True)
 
 # Değerleri yalnızca belirli noktalara metin olarak ekle

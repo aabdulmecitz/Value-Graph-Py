@@ -1,0 +1,12 @@
+requests
+aiohttp
+pandas
+numpy
+selenium
+beautifulsoup4
+sqlite3
+SQLAlchemy
+matplotlib
+logging
+
+pip install -r requirements.txt
